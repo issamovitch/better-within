@@ -223,6 +223,22 @@ function LeadForm({
       if (!res.ok || !data.ok) {
         throw new Error(data.error || "Something went wrong. Please try again.");
       }
+      if (typeof window !== "undefined" && (window as any).fbq) {
+        try {
+          const normalized = email.trim().toLowerCase();
+          const buf = await crypto.subtle.digest(
+            "SHA-256",
+            new TextEncoder().encode(normalized)
+          );
+          const hash = Array.from(new Uint8Array(buf))
+            .map((b) => b.toString(16).padStart(2, "0"))
+            .join("");
+          (window as any).fbq("init", "1779611606725498", { em: hash });
+        } catch {
+          // hashing failed — still fire the event without em
+        }
+        (window as any).fbq("track", "Lead");
+      }
       onSuccess();
       if (typeof window !== "undefined") {
         window.scrollTo({ top: 0, behavior: "smooth" });
