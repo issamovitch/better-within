@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "(1) **Eyebrow line**: Centered (with leading dash). The text \"A FREE · SCIENCE-BASED FIELD GUIDE\" is now horizontally centered, including the leading dash.  \n(2) **Headline**: Centered. \"Why Did I Say That?\" is fully centered.  \n(3) **Subtitle**: Centered. The paragraph text is centered and wraps appropriately.  \n(4) **Email input + button**: Stacked, full-width, and centered. The input field and \"Send me the PDF\" button are stacked vertically, each spanning the full width of the container, and centered.  \n(5) **Checkmark trust items**: Centered (wrapping). The three items (\"Under an hour to read\", \"References to every study\", \"A 14-day plan...\") are now centered and wrap as needed.  \n(6) **Remaining issues**: None. All elements are properly aligned, spaced, and no overflow occurs. The layout is responsive and visually consistent.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1783185499,
+  "id": "2026070501181342ccfde23b224672",
+  "model": "glm-4.6v",
+  "object": "chat.completion",
+  "request_id": "2026070501181342ccfde23b224672",
+  "usage": {
+    "completion_tokens": 209,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 559,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 768
+  }
+}

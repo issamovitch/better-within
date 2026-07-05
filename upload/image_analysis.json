@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image is a book cover with a dark, moody color palette dominated by deep blues and blacks, accented by warm golden and brown tones. At the top, in small, uppercase, gold-colored text, it reads \"A SCIENCE-BASED FIELD GUIDE.\" Below this, the title \"Why Did I Say That?\" is prominently displayed in large, bold, off-white serif font, with \"Why Did I\" on the top line and \"Say That?\" on the bottom line, separated by a thin gold horizontal line.  \n\nBeneath the title, a smaller, white serif font provides a subtitle: \"Learn how I stopped the social anxiety, rumination, and intrusive thoughts that replayed every work conversation I had — before the overthinking cost me my peace and my career.\" Below this, in even smaller, light blue italicized text, it states: \"For education only. Not therapy. Not diagnosis.\"  \n\nThe central visual element is an illustration of a man lying in bed, his head resting on a pillow, with a pained, worried expression. Above his head, a cloud-like thought bubble contains a faded, hazy scene of a group of people in a meeting: a man standing and speaking, with four others seated around a table (one woman with long hair, a man with short hair, a woman with dark hair, and a man with glasses), all appearing to be in a work or social setting. The thought bubble is rendered in cool blues and grays, contrasting with the warmer tones of the bed and the man’s face.  \n\nTo the left of the man in bed, a wooden nightstand holds a vintage-style alarm clock with a round face, showing approximately 1:00 (the hour hand on 1, minute hand on 12), and a dark mug. A desk lamp with a black shade casts a warm, yellowish light, illuminating the clock and part of the nightstand. The bed linens are a textured, dark blue, and the man wears a simple, short-sleeved shirt.  \n\nAt the bottom of the cover, in gold uppercase text, it reads \"BETTER WITHIN,\" centered below the illustration. The overall layout balances text and imagery, with the dark background emphasizing the central figure and the thought bubble, conveying a theme of introspection and mental struggle.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1783140713,
+  "id": "20260704125139dc3636d3d89b415e",
+  "model": "glm-4.6v",
+  "object": "chat.completion",
+  "request_id": "20260704125139dc3636d3d89b415e",
+  "usage": {
+    "completion_tokens": 479,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2056,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 2535
+  }
+}
