@@ -16,6 +16,9 @@ const EMAIL_FROM =
   process.env.EMAIL_FROM || "Better Within <books@betterwithin.com>";
 export const PDF_URL = process.env.PDF_URL || "";
 export const AUDIO_URL = process.env.AUDIO_URL || "";
+// Absolute base URL of the deployed site — email clients can't load relative paths.
+const SITE_URL = (process.env.SITE_URL || "").replace(/\/$/, "");
+const LOGO_URL = SITE_URL ? `${SITE_URL}/logo.png` : "";
 
 let client: Resend | null = null;
 function getResend(): Resend | null {
@@ -69,6 +72,7 @@ function buildHtml(): string {
           <!-- header band -->
           <tr>
             <td style="background:#0e1422;padding:30px 36px;text-align:center;">
+              ${LOGO_URL ? `<img src="${escapeHtml(LOGO_URL)}" alt="Better Within" width="120" style="display:block;margin:0 auto 14px;max-width:120px;height:auto;border:0;">` : ""}
               <p style="margin:0 0 6px;color:#c9a24a;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;">A Science-Based Field Guide</p>
               <h1 style="margin:0;color:#ffffff;font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;line-height:1.15;">Why Did I Say That?</h1>
             </td>
