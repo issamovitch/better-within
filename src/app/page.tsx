@@ -516,7 +516,7 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#f7f2e9] text-[#b8893f]">
                       <p.icon className="h-5 w-5" />
                     </span>
-                    <h3 className="mt-4 font-serif text-lg font-semibold text-[#1a1410]">
+                    <h3 className="mt-4  text-lg font-semibold text-[#1a1410]">
                       {p.title}
                     </h3>
                     <p className="mt-2 text-sm leading-relaxed text-[#6b6253]">
@@ -625,7 +625,7 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
                         {t.tag}
                       </Badge>
                     </div>
-                    <h3 className="mt-5 font-serif text-xl font-semibold text-[#1a1410]">
+                    <h3 className="mt-5 text-xl font-semibold text-[#1a1410]">
                       {t.title}
                     </h3>
                     <p className="mt-1 text-sm font-medium italic text-[#b8893f]">
