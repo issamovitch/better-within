@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -414,7 +415,6 @@ function Footer() {
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
     <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#b8893f]">
-      <span className="h-px w-6 bg-[#b8893f]/50" />
       {children}
     </span>
   );
@@ -432,10 +432,7 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
 
         <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:gap-12 md:py-24">
           {/* copy */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+          <div
             className="text-center md:text-left"
           >
             <SectionEyebrow>A free · science-based field guide</SectionEyebrow>
@@ -453,7 +450,7 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
 
             <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-white/70 md:mx-0">
               Learn how I stopped the social anxiety, rumination, and intrusive
-              thoughts that replayed every work conversation I had — before the
+              thoughts that replayed every work conversation I had, before the
               overthinking cost me my peace and my career.
             </p>
 
@@ -475,26 +472,23 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
                 A 14-day plan that actually moves the needle
               </span>
             </div>
-          </motion.div>
+          </div>
 
           {/* book cover */}
-          <motion.div
-            initial={{ opacity: 0, y: 30, rotate: 2 }}
-            animate={{ opacity: 1, y: 0, rotate: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-            className="relative mx-auto w-full max-w-sm"
-          >
+          <div className="relative mx-auto w-full max-w-sm">
             <div className="absolute inset-0 -z-10 translate-y-6 scale-95 rounded-2xl bg-[#c9a24a]/15 blur-2xl" />
             <div className="overflow-hidden rounded-xl border border-white/10 shadow-2xl shadow-black/50 ring-1 ring-white/5">
-              <img
-                src="/book-cover.png"
-                alt="Cover of the book 'Why Did I Say That?' — a man lying awake at 2 a.m. with a thought bubble of a work meeting above his head"
-                className="aspect-[3/4] w-full object-cover"
-                width={600}
-                height={800}
+              <Image
+                  src="/book-cover.png"
+                  alt="Cover of the book 'Why Did I Say That?'"
+                  width={600}
+                  height={800}
+                  priority
+                  sizes="(max-width: 640px) 100vw, 384px"
+                  className="aspect-[3/4] w-full object-cover"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
