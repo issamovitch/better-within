@@ -484,6 +484,7 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
                   width={600}
                   height={800}
                   priority
+                  loading="eager"
                   sizes="(max-width: 640px) 100vw, 384px"
                   className="aspect-[3/4] w-full object-cover"
               />
