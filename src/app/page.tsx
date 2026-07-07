@@ -305,7 +305,7 @@ function LeadForm({
         ) : (
           <span className="flex items-center gap-1.5 mx-auto w-fit">
             <Lock className="h-3.5 w-3.5" />
-            Free PDF · 24 pages · One email, no spam.
+            Free PDF + audio version · 24 pages · One email, no spam.
           </span>
         )}
       </div>
@@ -430,22 +430,16 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
         <div className="pointer-events-none absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-[#3a5a8c]/10 blur-3xl" />
         <div className="pointer-events-none absolute inset-0 opacity-[0.04] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:44px_44px]" />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:gap-12 md:py-24">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 pt-8 sm:px-6 md:grid-cols-2 md:gap-12 md:py-24">
           {/* copy */}
           <div
             className="text-center md:text-left"
           >
             <SectionEyebrow>A free · science-based field guide</SectionEyebrow>
 
-            <h1 className="mt-5 font-serif text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
-              Why Did I
-              <span className="mt-1 block">
-                Say{" "}
-                <span className="relative whitespace-nowrap text-[#e8c878]">
-                  That?
-                  <span className="absolute -bottom-1 left-0 h-px w-full bg-gradient-to-r from-transparent via-[#c9a24a] to-transparent" />
-                </span>
-              </span>
+            <h1 className="mt-5 font-serif text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl"
+            style={{lineHeight: "46px"}}>
+              Stop Replaying Every Work Conversation
             </h1>
 
             <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-white/70 md:mx-0">
