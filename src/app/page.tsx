@@ -303,7 +303,7 @@ function LeadForm({
             {errorMsg}
           </span>
         ) : (
-          <span className="flex items-center gap-1.5">
+          <span className="flex items-center gap-1.5 mx-auto w-fit">
             <Lock className="h-3.5 w-3.5" />
             Free PDF · 24 pages · One email, no spam.
           </span>
