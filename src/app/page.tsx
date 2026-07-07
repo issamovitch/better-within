@@ -437,8 +437,7 @@ function LandingView({ onSuccess }: { onSuccess: () => void }) {
           >
             <SectionEyebrow>A free · science-based field guide</SectionEyebrow>
 
-            <h1 className="mt-5 font-serif text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl"
-            style={{lineHeight: "46px"}}>
+            <h1 className="mt-5 font-serif text-4xl font-bold tracking-tight sm:text-5xl sm:leading-tight md:text-6xl leading-12 md:leading-17">
               Stop Replaying Every Work Conversation
             </h1>
 
