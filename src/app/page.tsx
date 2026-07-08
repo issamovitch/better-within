@@ -279,7 +279,7 @@ function LeadForm({
         <Button
           type="submit"
           disabled={status === "loading"}
-          className="h-12 bg-[#c9a24a] text-[#1a1410] font-semibold shadow-lg shadow-[#c9a24a]/20 hover:bg-[#d8b25e] hover:text-[#1a1410] disabled:opacity-60"
+          className="cursor-pointer h-12 bg-[#c9a24a] text-[#1a1410] font-semibold shadow-lg shadow-[#c9a24a]/20 hover:bg-[#d8b25e] hover:text-[#1a1410] disabled:opacity-60"
         >
           {status === "loading" ? (
             "Sending…"
@@ -355,7 +355,7 @@ function Header({ compact = false }: { compact?: boolean }) {
         {!compact && (
           <Button
             onClick={() => scrollToId("get")}
-            className="bg-[#c9a24a] text-[#1a1410] font-semibold hover:bg-[#d8b25e] hover:text-[#1a1410]"
+            className="cursor-pointer bg-[#c9a24a] text-[#1a1410] font-semibold hover:bg-[#d8b25e] hover:text-[#1a1410]"
           >
             Get the book
           </Button>
